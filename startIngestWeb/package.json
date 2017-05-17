@@ -1,0 +1,13 @@
+{
+  "name": "start-ingest-web",
+  "version": "0.0.0",
+  "description": "startIngestWeb",
+  "main": "server.js",
+  "author": {
+    "name": "30090579"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.15.2"
+  }
+}

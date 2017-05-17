@@ -1,0 +1,278 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>startIngestWeb</Name>
+    <RootNamespace>startIngestWeb</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b96999d1-b9d1-49f2-8d6c-98773254fc8e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bootstrap\dist\js\bootstrap.js" />
+    <Compile Include="bootstrap\dist\js\bootstrap.min.js" />
+    <Compile Include="bootstrap\Gruntfile.js" />
+    <Compile Include="bootstrap\grunt\change-version.js" />
+    <Compile Include="bootstrap\grunt\postcss.js" />
+    <Compile Include="bootstrap\js\dist\alert.js" />
+    <Compile Include="bootstrap\js\dist\button.js" />
+    <Compile Include="bootstrap\js\dist\carousel.js" />
+    <Compile Include="bootstrap\js\dist\collapse.js" />
+    <Compile Include="bootstrap\js\dist\dropdown.js" />
+    <Compile Include="bootstrap\js\dist\modal.js" />
+    <Compile Include="bootstrap\js\dist\popover.js" />
+    <Compile Include="bootstrap\js\dist\scrollspy.js" />
+    <Compile Include="bootstrap\js\dist\tab.js" />
+    <Compile Include="bootstrap\js\dist\tooltip.js" />
+    <Compile Include="bootstrap\js\dist\util.js" />
+    <Compile Include="bootstrap\js\src\alert.js" />
+    <Compile Include="bootstrap\js\src\button.js" />
+    <Compile Include="bootstrap\js\src\carousel.js" />
+    <Compile Include="bootstrap\js\src\collapse.js" />
+    <Compile Include="bootstrap\js\src\dropdown.js" />
+    <Compile Include="bootstrap\js\src\modal.js" />
+    <Compile Include="bootstrap\js\src\popover.js" />
+    <Compile Include="bootstrap\js\src\scrollspy.js" />
+    <Compile Include="bootstrap\js\src\tab.js" />
+    <Compile Include="bootstrap\js\src\tooltip.js" />
+    <Compile Include="bootstrap\js\src\util.js" />
+    <Compile Include="bootstrap\js\tests\unit\alert.js" />
+    <Compile Include="bootstrap\js\tests\unit\button.js" />
+    <Compile Include="bootstrap\js\tests\unit\carousel.js" />
+    <Compile Include="bootstrap\js\tests\unit\collapse.js" />
+    <Compile Include="bootstrap\js\tests\unit\dropdown.js" />
+    <Compile Include="bootstrap\js\tests\unit\modal.js" />
+    <Compile Include="bootstrap\js\tests\unit\phantom.js" />
+    <Compile Include="bootstrap\js\tests\unit\popover.js" />
+    <Compile Include="bootstrap\js\tests\unit\scrollspy.js" />
+    <Compile Include="bootstrap\js\tests\unit\tab.js" />
+    <Compile Include="bootstrap\js\tests\unit\tooltip.js" />
+    <Compile Include="bootstrap\js\tests\vendor\qunit.js" />
+    <Compile Include="Scripts\bootstrap.js" />
+    <Compile Include="Scripts\bootstrap.min.js" />
+    <Compile Include="Scripts\ddmenu.js" />
+    <Compile Include="Scripts\getStartIngestVars.js" />
+    <Compile Include="Scripts\helloworld.js" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Compile Include="Scripts\jquery-1.9.1.js" />
+    <Compile Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Compile Include="Scripts\jquery-3.1.1.js" />
+    <Compile Include="Scripts\jquery-3.1.1.min.js" />
+    <Compile Include="Scripts\jquery-3.1.1.slim.js" />
+    <Compile Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Compile Include="Scripts\r.js" />
+    <Compile Include="Scripts\rabbit.js" />
+    <Compile Include="Scripts\require.js" />
+    <Compile Include="Scripts\setStartIngestVars.js" />
+    <Compile Include="Scripts\submitIngest.js" />
+    <Compile Include="server.js" />
+    <Content Include="bootstrap\CHANGELOG.md" />
+    <Content Include="bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap\dist\css\bootstrap.css" />
+    <Content Include="bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap\grunt\configBridge.json" />
+    <Content Include="bootstrap\grunt\gcp-key.json.enc" />
+    <Content Include="bootstrap\grunt\npm-shrinkwrap.json" />
+    <Content Include="bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="bootstrap\grunt\upload-preview.sh" />
+    <Content Include="bootstrap\js\tests\README.md" />
+    <Content Include="bootstrap\LICENSE" />
+    <Content Include="bootstrap\package.json" />
+    <Content Include="bootstrap\README.md" />
+    <Content Include="bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="bootstrap\scss\bootstrap.scss" />
+    <Content Include="bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="bootstrap\scss\mixins\_cards.scss" />
+    <Content Include="bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="bootstrap\scss\mixins\_float.scss" />
+    <Content Include="bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="bootstrap\scss\mixins\_image.scss" />
+    <Content Include="bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="bootstrap\scss\mixins\_size.scss" />
+    <Content Include="bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="bootstrap\scss\mixins\_transforms.scss" />
+    <Content Include="bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="bootstrap\scss\utilities\_align.scss" />
+    <Content Include="bootstrap\scss\utilities\_background.scss" />
+    <Content Include="bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="bootstrap\scss\utilities\_display.scss" />
+    <Content Include="bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="bootstrap\scss\utilities\_float.scss" />
+    <Content Include="bootstrap\scss\utilities\_position.scss" />
+    <Content Include="bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="bootstrap\scss\utilities\_text.scss" />
+    <Content Include="bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="bootstrap\scss\_alert.scss" />
+    <Content Include="bootstrap\scss\_badge.scss" />
+    <Content Include="bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="bootstrap\scss\_button-group.scss" />
+    <Content Include="bootstrap\scss\_buttons.scss" />
+    <Content Include="bootstrap\scss\_card.scss" />
+    <Content Include="bootstrap\scss\_carousel.scss" />
+    <Content Include="bootstrap\scss\_close.scss" />
+    <Content Include="bootstrap\scss\_code.scss" />
+    <Content Include="bootstrap\scss\_custom-forms.scss" />
+    <Content Include="bootstrap\scss\_custom.scss" />
+    <Content Include="bootstrap\scss\_dropdown.scss" />
+    <Content Include="bootstrap\scss\_forms.scss" />
+    <Content Include="bootstrap\scss\_grid.scss" />
+    <Content Include="bootstrap\scss\_images.scss" />
+    <Content Include="bootstrap\scss\_input-group.scss" />
+    <Content Include="bootstrap\scss\_jumbotron.scss" />
+    <Content Include="bootstrap\scss\_list-group.scss" />
+    <Content Include="bootstrap\scss\_media.scss" />
+    <Content Include="bootstrap\scss\_mixins.scss" />
+    <Content Include="bootstrap\scss\_modal.scss" />
+    <Content Include="bootstrap\scss\_nav.scss" />
+    <Content Include="bootstrap\scss\_navbar.scss" />
+    <Content Include="bootstrap\scss\_normalize.scss" />
+    <Content Include="bootstrap\scss\_pagination.scss" />
+    <Content Include="bootstrap\scss\_popover.scss" />
+    <Content Include="bootstrap\scss\_print.scss" />
+    <Content Include="bootstrap\scss\_progress.scss" />
+    <Content Include="bootstrap\scss\_reboot.scss" />
+    <Content Include="bootstrap\scss\_responsive-embed.scss" />
+    <Content Include="bootstrap\scss\_tables.scss" />
+    <Content Include="bootstrap\scss\_tooltip.scss" />
+    <Content Include="bootstrap\scss\_transitions.scss" />
+    <Content Include="bootstrap\scss\_type.scss" />
+    <Content Include="bootstrap\scss\_utilities.scss" />
+    <Content Include="bootstrap\scss\_variables.scss" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\media\VortexT.ico" />
+    <Content Include="Content\sitecss.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="index.html" />
+    <Content Include="menuBar.html" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="start.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bootstrap\" />
+    <Folder Include="bootstrap\dist\" />
+    <Folder Include="bootstrap\dist\css\" />
+    <Folder Include="bootstrap\dist\js\" />
+    <Folder Include="bootstrap\grunt\" />
+    <Folder Include="bootstrap\js\" />
+    <Folder Include="bootstrap\js\dist\" />
+    <Folder Include="bootstrap\js\src\" />
+    <Folder Include="bootstrap\js\tests\" />
+    <Folder Include="bootstrap\js\tests\unit\" />
+    <Folder Include="bootstrap\js\tests\vendor\" />
+    <Folder Include="bootstrap\scss\" />
+    <Folder Include="bootstrap\scss\mixins\" />
+    <Folder Include="bootstrap\scss\utilities\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\media\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
